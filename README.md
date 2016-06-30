@@ -33,6 +33,31 @@
 ----
 
 * Skip this section if you made an attempt at producing the constraints for the `UIStackView` yourself.
+* First you need to constrain the `UIStackView` to the edges of it's parent view. Its parent view is the `UIScrollView`.
+* Against what feels normal for you when making constraints, we need to set a _Height_ & _Width_ constraint on the `UIStackView`. Think of the `UIScrollView` as a fixed window that we're peering into it and its content (its content being the `UIStackView` is what's inside that window. That content can be larger than the window, we can move the window from side to side and while it's moving we can only see what's visible through the window.
+
+![appleKid](http://i.imgur.com/RjWzoO3.jpg?1)
+
+* This image is a better representation of the prior bullet point. The black box is the `UIScrollView` and the photo of the boy is the content. We can move the window around to view the content.
+* So all of that out of the way, we setup our window `UIScrollView` (sticking with the analogy) to be constrained to the `View`. We need to set the _height_ & _width_ of ths `UIStackView` now which in this analogy is the photo of this boy.
+* The height should be set to equal the height of the `View`. This is so we can't scroll up & down, we only want to scroll left and right.
+* We have 5 photos we need to add to this `UIStackView`, what should the width of this `UIStackView` be set to? In setting up the width constraint equal to the `View`, you should set the multiplier equal to something other than 1.
+* It might be hard to guess exactly how your `UIStackView` should be layed out, but make an attempt at setting the correct attributes before adding the `UIImageView`'s below. It might be hard to guess right the first time.. but don't just guess. Make an attempt to think through what you're setting here.
+
+![stackAttributes](http://i.imgur.com/D6grpTZ.png)
+
+---
+
+* Add five(5) `UIImageView`'s to your `UIStackView`
+* Set a separate image into each `UIImageView`. The images are included in the project for you. Characters from the movie [Inside Out](http://www.imdb.com/title/tt2096673/).
+* `UIImageView`'s have a property which dictates how the `UIImage` will fill within its space, mess around with the various options to see what looks best.
+
+![imageViewOptions](http://i.imgur.com/ZKVSCFA.png)
+
+* There are opther options as well on `UIImageView` (which acts like the frame to your `UIImage` that can help you out in a situation where you might see some images bleeding over its frame. Mess around here to see how you can fix that problem:
+
+![moreOptions](http://i.imgur.com/pyjC0dC.png)
+
 
 
 <a href='https://learn.co/lessons/ScrollViews' data-visibility='hidden'>View this lesson on Learn.co</a>
