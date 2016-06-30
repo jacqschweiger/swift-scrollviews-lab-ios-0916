@@ -62,7 +62,7 @@
 
 * Word of advice when working with `UIScrollView`'s. Run and run often.
 
-![yay](https://media.giphy.com/media/DZ5KBU522trGM/giphy.gif)
+![yay](https://media.giphy.com/media/12d19apJyRsmA/giphy.gif)
 
 
 
